@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ui.DashboardActivity">
+
+    <TextView
+        android:id="@+id/textView_placeholder1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:text="Username: "
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/textView_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textView_placeholder1"
+        android:layout_marginHorizontal="10dp"
+        android:layout_toEndOf="@id/textView_placeholder1"
+        android:text="- - - - - - - - - - - - - -"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+
+    <TextView
+        android:id="@+id/textView_placeholder2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_placeholder1"
+        android:layout_marginVertical="10dp"
+        android:text="Email: "
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/textView_useremail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/textView_username"
+        android:layout_alignTop="@id/textView_placeholder2"
+        android:text="- - - - - - - - - - - - - -"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+
+    <TextView
+        android:id="@+id/textView_placeholder3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_placeholder2"
+        android:layout_marginVertical="10dp"
+        android:text="Number: "
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/textView_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_useremail"
+        android:layout_alignStart="@id/textView_useremail"
+        android:layout_alignTop="@id/textView_placeholder3"
+        android:text="- - - - - - - - - - - - - -"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+
+    <TextView
+        android:id="@+id/textView_placeholder4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_below="@id/textView_placeholder3"
+        android:text="Token: "
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/textView_token"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/textView_username"
+        android:layout_alignTop="@id/textView_placeholder4"
+        android:text="- - - - - - - - - - - - - -"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_logout"
+        android:textStyle="normal"
+        android:text="LogOut"
+        android:layout_below="@id/textView_token"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_dashboard_next"
+        android:textStyle="normal"
+        android:layout_marginVertical="10dp"
+        android:text="Open Restaurant List"
+        android:layout_below="@id/button_logout"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
